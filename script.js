@@ -1,5 +1,7 @@
 function toCase(text) {
-  // write your code here
+    text = text.replace(/[^a-zA-Z0-9]/g, '');
+    let fin = `${text.toLowerCase()}- ${text.toUpperCase()}`
+    return fin;
 }
 
 // DO not change the code below
